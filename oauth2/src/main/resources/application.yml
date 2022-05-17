@@ -6,19 +6,19 @@ spring:
     password: GSretail0890!@
   sql:
     init:
-      mode: never # resource ? ?? schema.sql ? ?? (???: always, ????: never)
-  jpa: # DB ?? ?? ?? ??? ?? ??? ??? ??
+      mode: never
+  jpa:
     show-sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   main:
-    allow-bean-definition-overriding: true # userDetailService ?? ??? ?? ?? ??? ??? ??? ??? ?? ??
+    allow-bean-definition-overriding: true
 server:
-  port: 8081 # ?? ??
+  port: 8081
   tomcat:
     accesslog:
-      enabled: true # access ?? ??
-    basedir: . # ??
+      enabled: true
+    basedir: .
 logging:
   level:
     org:
