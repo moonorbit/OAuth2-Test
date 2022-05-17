@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  h2:
+    console:
+      enabled: true
+      path: "/h2-console"
+security:
+  user:
+    name: "user"
+    password: "test"
+  oauth2:
+    client:
+      client-id: "foo"
+      client-secret: "bar"
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+        boot: debug
